@@ -1,0 +1,190 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    
+    background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url('./comp.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity:0.9;
+}
+.nav{
+    background: #28bcf7;
+    top: 1px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+nav ul{
+    display: flex;
+    margin-left: 122px;
+}
+nav ul li{
+    display: flex;
+    padding:0px 12px;
+    list-style: none;
+    margin-left: 12px;
+}
+nav ul li a{
+    list-style: none;
+    padding: 12px 13px;
+    text-decoration: none;
+    font-size:20px;
+}
+.info{
+    background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url('./computer\ world.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 50vh;
+    margin-top: 12px;
+    width: 100%;
+    display: block;
+    margin: 50px auto;
+}
+.info h1{
+    color: rgb(31, 127, 236);
+    position: relative;
+    top: 12px;
+    animation: change1 1s infinite forwards;
+}
+
+@keyframes change1 {
+    0%{
+        color: aqua;
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+        color: blanchedalmond;
+    }
+    75%{
+        color: cadetblue;
+    }
+    100%{
+        color: red;
+    }
+}
+
+.myself{
+    margin-top: 19px;
+    color: rgb(105, 105, 240);
+    font-size: 24px;
+    width: 37%;
+    height: 138px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 9%;
+}
+
+.myself p{
+    margin-top: 18px;
+    margin-left: 12px;
+    color: bisque;
+    font-weight: bolder;
+    overflow-x: hidden;
+    animation: change2 7s infinite forwards;
+}
+
+@keyframes change2{
+    0%{
+        color: rgb(255, 123, 0);
+        transform: translate(100px);
+        opacity: 0;
+    }
+    25%{
+        color: rgb(0, 255, 85);
+    }
+    50%{
+        color: rgb(239, 205, 255);
+    }
+    75%{
+        color: rgb(160, 95, 133);
+    }
+    100%{
+        color: red;
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 23px 12px;
+    width: 88%;
+}
+.mypic{
+    background:url('./VIKASH\ JPEG.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 51%;
+    margin-top: 30px;
+    animation: slide 1s linear forwards;
+}
+@keyframes slide {
+    0%{
+        transform: translate(100px);
+        opacity:0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+.contact-us{
+    margin-top: 12px;
+    width: 61%;
+    display: block;
+    margin: -51px auto;
+    height: 100vh;
+}
+
+.form{
+    display: flex;
+    flex-direction:column;
+    height: 67%;
+    width: 50%;
+    margin: 12px auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 51px;
+}
+
+input{
+    padding: 12px 13px;
+    border: 3px solid darkseagreen;
+    width: 217px;
+    color: #f1dce0;
+    background: transparent;
+    border-radius: 23px;
+    font-size: 18px;
+    font-weight: 900;
+    width: 137%;
+    position: relative;
+    left: -74px;
+    margin: 12px 15px;
+}
+
+input::placeholder{
+    color: rgb(255, 0, 221);
+}
+.form h1{
+    font-size: xx-large;
+    color: cornsilk;
+}
+.btn{
+    padding: 15px;
+    position: relative;
+    left: 273px;
+    top: 43px;
+    background: #28bcf7;
+    font-size: xx-large;
+    border-radius: 23px;
+    border: 2px solid rgb(105, 105, 240);
+}
